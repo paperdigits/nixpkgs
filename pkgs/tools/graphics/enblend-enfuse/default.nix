@@ -11,6 +11,8 @@ stdenv.mkDerivation rec {
     sha256 = "0j5x011ilalb47ssah50ag0a4phgh1b0wdgxdbbp1gcyjcjf60w7";
   };
 
+	configureFlags = "--enable-gpu-support=yes --disable-image-cache --enable-openmp=yes";
+
   buildInputs = [ boost freeglut glew gsl lcms2 libpng libtiff mesa vigra ];
 
   nativeBuildInputs = [ help2man perl pkgconfig texlive.combined.scheme-small ];
