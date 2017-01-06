@@ -14684,6 +14684,11 @@ in
     cmake = cmake_2_8; # problems after 3.4 -> 3.6.0
   });
 
+	rawtherapee-gtk3-git = lowPrio (callPackage ../applications/graphics/rawtherapee/dev-gtk3.nix {
+    fftw = fftwSinglePrec;
+    cmake = cmake;
+  });
+
   rclone = callPackage ../applications/networking/sync/rclone { };
 
   rcs = callPackage ../applications/version-management/rcs { };
