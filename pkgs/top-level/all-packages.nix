@@ -4257,6 +4257,8 @@ with pkgs;
 
   djv = callPackage ../applications/graphics/djv { };
 
+  displaycal = python3Packages.callPackage ../applications/graphics/displaycal { };
+
   dnschef = python3Packages.callPackage ../tools/networking/dnschef { };
 
   doitlive = callPackage ../tools/misc/doitlive { };
